@@ -7,7 +7,7 @@
 
 ## Get up and running instruction
 
- - Build project with a `./mvnw compile` command
+ - Build project with a `./mvnw install` command
  - Build and push a docker image of the just built app with `./docker-build.sh`
  - Run `kubectl apply -f kube/app.yaml` for spinning up the app Kubernetes service
  - Check that the app is running on localhost having `http://localhost:3080/read` endpoint responding
