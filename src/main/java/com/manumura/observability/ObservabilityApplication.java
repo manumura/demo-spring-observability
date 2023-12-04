@@ -52,6 +52,7 @@ class ReadController {
 		try {
 			Thread.sleep(10 + random.nextLong(50));
 		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
 			throw new RuntimeException(e);
 		}
 		return "Done";
