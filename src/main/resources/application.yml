@@ -1,6 +1,9 @@
 spring:
   application:
     name: train-webapp-metrics
+  threads:
+    virtual:
+      enabled: true
 
 management:
   observations:
